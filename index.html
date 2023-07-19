@@ -39,7 +39,7 @@
     function updateUserCount() {
       // Make an AJAX request to the PHP script on the server
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'user_count.php', true);
+      xhr.open('GET', './assets/php/user_count.php', true);
       xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
           // Parse the JSON response and update the user count display
